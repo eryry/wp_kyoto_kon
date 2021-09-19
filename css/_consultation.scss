@@ -1,0 +1,371 @@
+.consultation-mv {
+  position: relative;
+  margin-top: 111px;
+  height: 500px;
+  background-image: url(../images/consultation/consultation_main.png);
+  background-position: center;
+  background-size: cover;
+}
+.consultation-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0 calc((60 / 1920) * 100%);
+  padding-top: 38px;
+  padding-bottom: 52px;
+  max-width: 1200px;
+  width: calc((1200 / 1920) * 100%);
+  height: auto;
+  border-radius: 8px;
+  background-color: rgba($color: #fff, $alpha: 0.6);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.consultation-title-japanese {
+  color: #344148;
+  letter-spacing: 7.2px;
+  font-size: 1.5rem;
+  font-family: "NotoSansJP-Light", sans-serif;
+  line-height: 29px;
+}
+.consultation-title h2 {
+  margin-bottom: 0;
+  color: #344148;
+  letter-spacing: 9.6px;
+  font-size: 3rem;
+  font-family: "Bodoni 72", sans-serif;
+}
+.consultation-title-text {
+  margin-top: 30px;
+  letter-spacing: 1.6px;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 27px;
+}
+.consultation-main {
+  margin-top: 20px;
+  padding-top: 79px;
+  padding-bottom: 130px;
+  background-color: #f8f5f5;
+}
+.consultation-main h3 {
+  color: #525252;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-family: "NotoSansJP-Light", sans-serif;
+}
+.consultation-flow-pc {
+  margin: 0 auto;
+  margin-top: 105px;
+  max-width: 90%;
+  width: 800px;
+  height: auto;
+  img {
+    width: 100%;
+  }
+}
+.consultation-flow-sp {
+  display: none;
+}
+.consultation-showroom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 130px;
+  max-width: 90%;
+  width: 782px;
+}
+.consultation-showroom-title {
+  display: none;
+}
+.consultation-showroom-img {
+  width: 385px;
+  height: 270px;
+  img {
+    width: 100%;
+  }
+}
+.consultation-showroom-name {
+  position: relative;
+  text-align: center;
+  margin-top: 114px;
+  padding: 27px 13px 8px 26px;
+  width: 300px;
+  height: 75px;
+  line-height: 36px;
+  background-color: #fff;
+  opacity: 0.8;
+  font-size: 1.2rem;
+  font-family: "Hiragino Mincho ProN", serif;
+  &::after {
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 75px;
+    border: 1px solid #525252;
+  }
+}
+.consultation-information {
+  margin: 0 auto;
+  margin-top: 115px;
+  padding: 50px calc((106 / 1920) * 100%);
+  max-width: 90%;
+  width: 750px;
+  border: 1px solid #344148;
+  background: #fff;
+  box-shadow: 21px 24px 0 0 rgba($color: #e8d5d5, $alpha: 1);
+  font-family: "NotoSansJP-Light", sans-serif;
+  dt {
+    float: left;
+    width: 185px;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+  dd {
+    margin-bottom: 0;
+    margin-left: calc((185 / 788) * 100%);
+    font-size: 1.25rem;
+    padding-left: 60px;
+  }
+}
+.consultation-information dt:nth-child(n + 3) {
+  margin-top: 30px;
+}
+.consultation-information dd:nth-child(n + 4) {
+  margin-top: 30px;
+}
+.consultation-information dd:last-child {
+  margin-top: 22px;
+  color: #ba8686;
+}
+.consultation-map {
+  margin: 0 auto;
+  margin-top: 108px;
+  max-width: 90%;
+  width: 768px;
+}
+.consultation-map-btn {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  padding-left: 20px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #9b867b;
+  background-color: #fff;
+  color: #9b867b;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 50px;
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 13.8564064606px solid #9b867b;
+    content: "";
+    transform: translateY(-45%);
+  }
+  &:hover {
+    color: #9b867b;
+  }
+}
+.consultation-form-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 127px;
+  width: 450px;
+  height: 60px;
+  border: 1px solid #9b867b;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #9b867b;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Hiragino Mincho ProN", serif;
+  line-height: 60px;
+  transition: 0.3s;
+  &:hover {
+    background-color: #9b867b;
+    color: #fff;
+  }
+}
+
+/* ---------- responsive --------- */
+@media (min-width: 200px) and (max-width: 768px) {
+  .consultation-mv {
+    margin-top: 50px;
+    height: 300px;
+  }
+  .consultation-title {
+    padding: 33px calc((5 / 300) * 100%);
+    width: calc((300 / 375) * 100%);
+  }
+  .consultation-title-japanese {
+    letter-spacing: 1.2px;
+  }
+  .consultation-title h2 {
+    letter-spacing: 4px;
+  }
+  .consultation-title-text {
+    margin-top: 20px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .consultation-main {
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .consultation-flow-pc {
+    display: none;
+  }
+  .consultation-flow-sp {
+    display: block;
+    margin: 0 auto;
+    margin-top: 39px;
+    max-width: 90%;
+    width: 350px;
+    height: auto;
+    img {
+      width: 100%;
+    }
+  }
+  .consultation-showroom {
+    display: block;
+    margin: 0 auto;
+    margin-top: 68px;
+    max-width: 100%;
+    width: calc((360 / 375) * 100%);
+  }
+  .consultation-showroom-title {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 100px;
+    img {
+      width: auto;
+      height: 100px;
+    }
+  }
+  .consultation-showroom-img {
+    margin: 0 auto;
+    margin-top: 24px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+  .consultation-showroom-name {
+    margin: 0 auto;
+    margin-top: 24px;
+    padding: 10px 0 10px;
+    letter-spacing: 1.4px;
+    width: 230px;
+    height: 60px;
+    line-height: 50px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    &::after {
+      width: 100%;
+      height: 100%;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  .consultation-information {
+    margin-top: 40px;
+    padding-top: 29px;
+    padding-bottom: 36px;
+    width: calc((330 / 375) * 100%);
+    box-shadow: 7px 7px 0 0 rgba($color: #e8d5d5, $alpha: 1);
+  }
+  .consultation-information dt {
+    width: 105px;
+    &:nth-child(n + 3) {
+      margin-top: 20px;
+    }
+  }
+  .consultation-information dd {
+    margin-left: 105px;
+    padding-left: 0;
+    &:nth-child(n + 4) {
+      margin-top: 20px;
+    }
+  }
+  .consultation-map {
+    margin-top: 50px;
+  }
+  .consultation-map-btn　 {
+    width: calc((130 / 337.5) * 100%);
+    height: calc((30 / 337.5) * 100vw);
+    line-height: calc((30 / 337.5) * 100vw);
+  }
+  .consultation-form-btn {
+    margin-top: 30px;
+    width: calc((250 / 375) * 100%);
+    height: calc((40 / 375) * 100vw);
+    line-height: calc((40 / 375) * 100vw);
+  }
+}
+@media (min-width: 20em) {
+  .consultation-title-japanese {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 1.707));
+  }
+  .consultation-title h2 {
+    font-size: calc(1.25rem + ((1vw - 0.2rem) * 3.9829));
+  }
+  .consultation-title-text {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 0.569));
+  }
+  .consultation-main h3 {
+    font-size: calc(0.875rem + ((1vw - 0.2rem) * 2.5605));
+  }
+  .consultation-information dt {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 1.138));
+  }
+  .consultation-information dd {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 1.138));
+  }
+  .consultation-map-btn {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 0.569));
+  }
+  .consultation-form-btn {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 2.845));
+  }
+}
+@media (min-width: 63.9375em) {
+  .consultation-title-japanese {
+    font-size: 1.5rem;
+  }
+  .consultation-title h2 {
+    font-size: 3rem;
+  }
+  .consultation-title-text {
+    font-size: 1rem;
+  }
+  .consultation-main h3 {
+    font-size: 2rem;
+  }
+  .consultation-information dt {
+    font-size: 1.25rem;
+  }
+  .consultation-information dd {
+    font-size: 1.25rem;
+  }
+  .consultation-map-btn {
+    font-size: 1rem;
+  }
+  .consultation-form-btn {
+    font-size: 1.5rem;
+  }
+}

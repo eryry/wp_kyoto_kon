@@ -1,0 +1,741 @@
+// ゴシックの時 -> font-family: "Noto Sans JP", sans-serif;
+// 明朝体の時   -> font-family: "Hiragino Mincho ProN", serif;
+// 丸ゴシックの時   -> font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+// 角ゴシックの時   -> font-family: "Hiragino Kaku Gothic ProN W4",sans-serif;
+// 本明朝 -> BODONI72,serif;
+
+
+// PLAN TOP
+.plan-mv {
+  position: relative;
+  margin-top: 111px;
+  height: 500px;
+  background-image: url(../images/plan/plantop.png);
+  background-position: center;
+  background-size: cover;
+}
+.plan-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0 calc((60 / 1920) * 100%);
+  padding-top: 38px;
+  padding-bottom: 52px;
+  max-width: 1200px;
+  width: calc((1200 / 1920) * 100%);
+  height: auto;
+  border-radius: 8px;
+  background-color: rgba($color: #fff, $alpha: 0.6);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.plan-title-japanese {
+  color: #344148;
+  letter-spacing: 7.2px;
+  font-size: 1.5rem;
+  font-family: "NotoSansJP-Light", sans-serif;
+  line-height: 29px;
+}
+.plan-title h2 {
+  margin-bottom: 0;
+  color: #344148;
+  letter-spacing: 9.6px;
+  font-size: 3rem;
+  font-family: "Bodoni 72", sans-serif;
+}
+.plan-title-text {
+  margin-top: 30px;
+  letter-spacing: 1.6px;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 27px;
+}
+
+.plan-area-title {
+  // margin-top: 20px;
+  margin-bottom: 80px;
+  text-align: center;
+  p {
+    margin-top: 40px;
+    font-size:1.3rem;
+  }
+}
+
+// LINK
+a.plan-link-a-text {
+  text-decoration: underline !important;
+}
+.plan-link-a-text:hover {
+  color: #846351;
+}
+a.plan-image-img:hover{
+  opacity: 0.7;
+}
+// PLAN IMAGE
+.plan-image {
+  margin-bottom: 100px;
+  h3{
+    font-size: 1.3rem;
+    text-align: left;
+    margin-top: 45px;
+    margin-bottom: 65px;
+    line-height: 28px;
+  }
+  p {
+    font-size:1.05rem;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+.plan-image-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.plan-image-box {
+  width: 28%;
+  .plan-image-or {
+    text-align: center;
+  }
+}
+.plan-image-plus{
+  width: 8%;
+  vertical-align: middle;
+  font-weight: bold;
+  margin-top: 50px;
+  p{
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.plan-image-img {
+  width: 230px;
+  max-width: 100%;
+}
+
+
+// PLAN PRICE
+.plan-price-box {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.plan-price-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+.plan-price-box-each {
+  box-sizing: border-box;
+  width: 45%;
+  margin-left:10px;
+  margin-right: 10px;
+}
+.plan-price-white{
+  background-color: #fff;
+  padding: 40px 20px 20px 20px;
+  p {
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  p.plan-price-white-title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+ 
+}
+.plan-price-pink{
+  background-color: #E8D5D5;
+  color:#846351;
+  line-height: 70px;
+  .plan-price-num{
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
+p.plusallow-center {
+  text-align: center;
+}
+b{
+  line-height: 36px;
+  font-size: 1.3rem;
+}
+
+// PLAN ALL
+.plan-container {
+  background-color: $pink-bg;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .container {
+    width: 800px;
+    box-sizing: border-box;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    h2 {
+      text-align: left;
+      color: #9b867b;
+      font-family: "Hiragino Mincho ProN W3", serif;
+      line-height: 36px;
+      font-size: 2.25;
+      letter-spacing: 3.6px;
+      font-weight: normal;
+      border-bottom: solid 1px #9b867b;
+      padding: 30px 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// PLAN ABOUT
+.plan-about {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25px; //margin-top効かないのでhtml内記載で対応
+  width: 800px;
+  max-width: 100%;
+  .top-bottom-pd {
+    padding-top: 5px;
+    padding-bottom: 45px;
+  }
+  p {
+    font-family: "NotoSansJP-Light", sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    color: #525252;
+  }
+}
+.plan-main {
+  width: 800px;
+  max-width: 100%;
+  height: 121px;
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+.plan-main-flex-left {
+  width: 300px;
+  h3 {
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    font-size: 1.25rem;
+    background-color: #9b867b;
+    color: white;
+    padding: 20px;
+    margin-bottom: 16px;
+    line-height: 20px;
+  }
+  p {
+    font-family: "Hiragino Kaku Gothic ProN W6", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6e6e6e;
+  }
+  p span {
+    font-size: 1rem;
+  }
+}
+.plan-main-flex-mid {
+  width: 55px;
+  max-width: 100%;
+  height: 121px;
+  margin-left: 45px;
+  margin-right: 40px;
+  background-image: url(../images/plan/tri.png);
+  background-size: 80%;
+  background-position: center;
+}
+.plan-main-flex-right {
+  width: 450px;
+  // padding-left: 40px;
+  // padding-right: 40px;
+}
+.plan-main-flex-right p {
+  font-family: "Hiragino Mincho ProN W6", serif;
+  color: #846351;
+  font-size: 4.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 12px;
+  background: linear-gradient(transparent 60%, #e8d5d5 60%);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  .yen {
+    font-size: 1.2rem;
+    letter-spacing: 4.8px;
+  }
+}
+.plan-price-cap {
+    font-size: unquote("clamp(.4rem,1vw + 4px,1rem)");
+    letter-spacing: normal;
+    text-align:left;
+    margin-bottom:30px;
+}
+.container .plan-about > img {
+  padding-left: 0;
+  padding-right: 0;
+  width: 800px;
+  max-width: 100%;
+}
+.plantext {
+  width: 763px;
+  margin: auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.dot-text {
+  padding-bottom: .3em;
+  background-position: bottom left -5px;
+  background-repeat: repeat-x;
+  background-size: 1.3em .3em;
+  background-image: radial-gradient(.1em .1em at center center,#525252,#525252 100%,transparent);
+}
+.plan-main-photos {
+  display: flex;
+  max-width: 100%;
+  width: 800px;
+  margin: auto;
+  align-items: flex-start;
+}
+.plan-main-photos img {
+  padding: 15px;
+  margin-top: 20px;
+  width: calc(100% / 3);
+  height: calc(calc(100% / 3) * 0.8333);
+  max-width: fit-content;
+  height: auto;
+}
+
+// PLAN ITEMS
+.plan-items {
+  padding-bottom: 30px;
+}
+.plan-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+  justify-content: flex-start;
+  margin-top: 40px;
+  .plan-main-photos {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card {
+    margin: 10px 8px;
+    padding: 0;
+    width: 116px;
+    box-sizing: border-box;
+    border: 1px solid #707070 !important;
+    border-radius: 0;
+    img {
+      background-color: #e8d5d5;
+      padding: 10px 24px;
+      width: 100%;
+    }
+    .card-body {
+      position: relative;
+      height: 40px;
+      padding: 0;
+    }
+    .card-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 120px;
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1rem;
+      color: #4b565c;
+    }
+  }
+}
+
+// PLAN LINKS
+.plan-links-area {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.banner {
+  margin-bottom: 40px;
+  .b-img {
+    width: 600px;
+    max-width: 100%;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+}
+
+// WEDDING HALL
+.weddinghall-container {
+  padding-top: 50px;
+  padding-bottom: 130px;
+  background-color: $green-bg;
+  .container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .container img {
+    height: 180px;
+  }
+}
+.weddinghall-text {
+  p {
+    font-family: "NotoSansJP-Light", sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    line-height: 34px;
+    color: #525252;
+    margin-top: 130px;
+  }
+}
+
+// responsive
+@media (min-width: 200px) and (max-width: 768px) {
+  .plan-mv {
+    margin-top: 50px;
+    height: 300px;
+  }
+  .plan-title {
+    padding: 33px calc((5 / 300) * 100%);
+    width: calc((300 / 375) * 100%);
+  }
+  .plan-title-japanese {
+    letter-spacing: 1.2px;
+  }
+  .plan-title h2 {
+    letter-spacing: 4px;
+  }
+  .plan-title-text {
+    margin-top: 20px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .plan-container .container {
+    width: calc(100% - 30px);
+    padding-top: 0;
+  }
+  .plan-container {
+    margin-top: 10px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+  }
+  .plan-container .container h2 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .plan-main-photos img {
+    padding: 5px 5px 15px 5px;
+    margin-top: 15px;
+  }
+  .plan-about .top-bottom-pd {
+    padding-bottom: 20px;
+  }
+  .plantext {
+    width: 80%;
+    padding: 20px;
+    p {
+      font-size: 0.7rem;
+      letter-spacing: 1.8px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .text-left-sp {
+      text-align: left;
+    }
+    .text-right {
+      text-align:right;
+    }
+  }
+  .weddinghall {
+    img {
+      width: 190px;
+    }
+  }
+  .plan-main {
+    flex-direction: column;
+    height: 140px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .plan-main-flex-left {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .plan-main-flex-left h3 {
+    font-size: 0.625rem;
+    letter-spacing: 0.1rem;
+    padding: 10px !important;
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+  .plan-main-flex-left p {
+    height: 40px;
+    line-height: 40px;
+    font-size: .7rem;
+    letter-spacing: 0.06rem;
+  }
+  .plan-main-flex-left p span {
+    font-size: 0.625rem;
+  }
+  .plan-main-flex-mid {
+    width: 54px;
+    height: 30px;
+    max-width: 100%;
+    margin: 18px 14px 8px 14px;
+    padding: 14px;
+    background-image: url(../images/plan/sp-tri.png);
+  }
+
+  .plan-main-flex-right {
+    width: 200px;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+  }
+  .plan-main-flex-right p {
+    font-size: 2.25rem;
+    letter-spacing: 5.4px;
+    margin-top: 10px;
+    line-height: 1.4rem;
+    padding-bottom: 0;
+    background: linear-gradient(transparent 40%, #e8d5d5 40%);
+  }
+  .plan-main-flex-right p .yen {
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+  }
+  .plan-price-cap {
+    text-align:left;
+    padding-bottom:30px;
+  }
+  .plan-main-p-pt{
+    padding-top:30px;
+
+  }
+  .plan-links-area {
+    width: calc(100% - 50px);
+    margin: auto;
+  }
+  .banner .b-img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .weddinghall-container {
+    padding-top: 15px;
+    padding-bottom: 60px;
+  }
+  .weddinghall-container .container {
+    width: calc(100% - 40px);
+    padding: 0;
+    img {
+      height: 100px;
+    }
+  }
+  .weddinghall-text p {
+    font-size: 0.75rem;
+    line-height: 18px;
+    letter-spacing: 2.4px;
+  }
+  .consultation-form-btn2 {
+    font-size: 0.75rem;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 50px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plan-price-white p{
+    letter-spacing: 1px;
+  }
+  .plan-price-pink p{
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .plan-area-title p{
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .plan-image h3{
+    font-size: .9rem;
+    line-height: 24px;
+    margin-top: 35px;
+  }
+  .plan-image p{
+    font-size: .9rem;
+    margin-bottom: 60px;
+  }
+  .plan-image-wrapper {
+    flex-direction: column;
+    margin-bottom: 100px;
+    .plan-image-box{
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      max-width: 100%;
+      .plan-image-img{
+        // max-width:30%;
+        width: 100px;
+        height: 100px;
+      }
+      .sp-plan-image-box-left{
+        width: 30vw;
+        height: 30vw;
+      }
+      .sp-plan-image-box-right{
+        width: 63vw;
+        max-width: 63%;
+        p {
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 5px;
+          margin-right: 5pxx;
+          font-size: .8rem;
+          line-height: 15px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    .plan-image-plus{
+      text-align: center;
+      margin: auto;
+      p{
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .plan-price-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+    width: 100%;
+    .plan-price-box-each{
+      width: 100%;
+      max-width: 100%;
+      margin: 10px 0 40px 0;
+      box-sizing: border-box;
+      .plan-price-white{
+        padding: 25px 20px 20px 20px;
+      }
+      .plan-price-white p {
+        font-size: .9rem;
+      }
+      .plan-price-white p.plan-price-white-title{
+        font-size: 1.05rem;
+      }
+      .plan-price-pink p {
+        line-height: 55px;
+      }
+    }
+  }
+  
+  .plan-price-pink{
+    p{
+      font-size: .8rem;
+    }
+    .plan-price-num{
+      font-size: 1.2rem;
+    }
+  }
+  
+  .plan-items-container {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .plan-items-container .card {
+    width: 85px;
+    margin: 6px;
+    img {
+      padding: 10px 18px;
+    }
+  }
+  .plan-items-container .card .card-body {
+    position: relative;
+    height: 36px;
+    padding: 0;
+  }
+  .plan-items-container .card .card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90px;
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: normal;
+    color: #4b565c;
+    p {
+      padding: 4px;
+    }
+  }
+  .plantext {
+    width: 100%;
+    padding: 20px 0;
+    p {
+      padding: 0;
+    }
+  }
+ 
+  .text-left-sp {
+    text-align: left;
+  }
+
+  
+}
+
+@media (min-width: 20em) {
+  .plan-title-japanese {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 1.707));
+  }
+  .plan-title h2 {
+    font-size: calc(1.25rem + ((1vw - 0.2rem) * 3.9829));
+  }
+  .plan-title-text {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 0.569));
+  }
+}
+@media (min-width: 63.9375em) {
+  .plan-title-japanese {
+    font-size: 1.5rem;
+  }
+  .plan-title h2 {
+    font-size: 3rem;
+  }
+  .plan-title-text {
+    font-size: 1rem;
+  }
+}

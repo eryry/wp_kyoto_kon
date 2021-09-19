@@ -1,0 +1,291 @@
+.dress-item-mv {
+  position: relative;
+  margin-top: 111px;
+  height: 500px;
+  background-image: url(../images/dress_item/dress_main.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.dress-item-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0 calc((60 / 1920) * 100%);
+  padding-top: 38px;
+  padding-bottom: 52px;
+  max-width: 1200px;
+  width: calc((1200 / 1920) * 100%);
+  height: auto;
+  border-radius: 8px;
+  background-color: rgba($color: #fff, $alpha: 0.6);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.dress-item-title-japanese {
+  color: #344148;
+  letter-spacing: 7.2px;
+  font-size: 1.5rem;
+  font-family: "NotoSansJP-Light", sans-serif;
+  line-height: 29px;
+}
+
+.dress-item-title h2 {
+  margin-bottom: 0;
+  color: #344148;
+  letter-spacing: 9.6px;
+  font-size: 3rem;
+  font-family: "Bodoni 72", sans-serif;
+}
+
+.dress-item-title-text {
+  margin-top: 30px;
+  letter-spacing: 1.6px;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 27px;
+}
+
+.dress-plan-benefits-text {
+  margin-top: 60px;
+  letter-spacing: 1.6px;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 27px;
+  text-align: center;
+}
+
+.dress-item-main {
+  margin-top: 20px;
+  padding-top: 115px;
+  padding-bottom: 111px;
+  background-color: #f8f5f5;
+}
+
+.dress-item-main h3 {
+  text-align: center;
+  height: 180px;
+
+  img {
+    height: 100%;
+  }
+}
+
+.dress-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 90%;
+  width: 1020px;
+}
+
+.dress-list li {
+  width: calc((395.5 / 1296) * 100%);
+  list-style: none;
+
+  img {
+    width: 100%;
+  }
+
+  &:nth-child(n + 4) {
+    margin-top: 45px;
+  }
+}
+
+.wedding-item {
+  margin-top: 147px;
+
+  .wedding-item-text {
+    margin-top: 60px;
+    letter-spacing: 1.6px;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 90%;
+  width: 1020px;
+}
+
+.item-list li {
+  width: calc((300 / 1020) * 100%);
+  list-style: none;
+
+  img {
+    width: 100%;
+  }
+
+  &:nth-child(n + 4) {
+    margin-top: 50px;
+  }
+}
+
+.dress-item-banner {
+  display: block;
+  margin: 0 auto;
+  margin-top: 147px;
+  width: 600px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.to-consultation-form {
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 450px;
+  height: 75px;
+  border: 1px solid #9b867b;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #9b867b;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Hiragino Mincho ProN", serif;
+  line-height: 75px;
+
+  &:hover {
+    background-color: #9b867b;
+    color: #fff;
+    transition: 0.3s;
+  }
+}
+
+/* --------- responsive ---------- */
+@media (min-width: 200px) and (max-width: 768px) {
+  .dress-item-mv {
+    margin-top: 50px;
+    height: 300px;
+  }
+  .dress-item-title {
+    padding: 33px calc((5 / 300) * 100%);
+    width: calc((300 / 375) * 100%);
+  }
+  .dress-item-title-japanese {
+    letter-spacing: 1.2px;
+  }
+  .dress-item-title h2 {
+    letter-spacing: 4px;
+  }
+  .dress-item-title-text {
+    margin-top: 20px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .dress-plan-benefits-text {
+    width: 330px;
+    margin: 20px auto;
+  }
+
+  .dress-item-main {
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 55px;
+  }
+  .wedding-dress {
+    h3 {
+      margin: 0 auto;
+      width: auto;
+      height: 100px;
+
+      img {
+        width: auto;
+      }
+    }
+  }
+  .dress-list {
+    margin-top: 30px;
+    width: calc((320 / 375) * 100%);
+  }
+  .dress-list li {
+    width: calc((150 / 320) * 100%);
+
+    &:nth-child(n + 3) {
+      margin-top: 20px;
+    }
+  }
+  .wedding-item {
+    margin-top: 63px;
+    .wedding-item-text {
+      width: 330px;
+      margin: 20px auto;
+    }
+  }
+  .wedding-item h3 {
+    margin: 0 auto;
+    width: auto;
+    height: 100px;
+
+    img {
+      width: auto;
+    }
+  }
+  .item-list {
+    margin-top: 28px;
+    width: calc((320 / 375) * 100%);
+  }
+  .item-list li {
+    width: calc((150 / 320) * 100%);
+
+    &:nth-child(n + 3) {
+      margin-top: 20px;
+    }
+  }
+  .dress-item-banner {
+    margin-top: 76px;
+    width: calc((300 / 375) * 100%);
+  }
+  .to-consultation-form {
+    margin-top: 45px;
+    max-height: 100px;
+    width: calc((250 / 375) * 100%);
+    height: calc((41 / 375) * 100vw);
+    line-height: calc((41 / 375) * 100vw);
+  }
+}
+
+@media (min-width: 320px) {
+  .dress-item-title-japanese {
+    min-height: 0vw;
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 1.707));
+  }
+  .dress-item-title h2 {
+    min-height: 0vw;
+    font-size: calc(1.25rem + ((1vw - 0.2rem) * 3.9829));
+  }
+  .dress-item-title-text {
+    min-height: 0vw;
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 0.569));
+  }
+  .to-consultation-form {
+    min-height: 0vw;
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 2.845));
+  }
+}
+
+@media (min-width: 768px) {
+  .dress-item-title-japanese {
+    font-size: 1.5rem;
+  }
+  .dress-item-title h2 {
+    font-size: 3rem;
+  }
+  .dress-item-title-text {
+    font-size: 1rem;
+  }
+  .to-consultation-form {
+    font-size: 1.5rem;
+  }
+}

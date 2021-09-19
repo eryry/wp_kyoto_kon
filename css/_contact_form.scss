@@ -1,0 +1,419 @@
+.contact-form-main {
+  margin-top: 111px;
+  padding-top: 50px;
+  padding-bottom: 222px;
+  background-color: #f8f5f5;
+}
+.contact-form-title {
+  margin: 0 auto;
+  height: 180px;
+  text-align: center;
+  img {
+    height: 100%;
+  }
+}
+.contact-form-flow img {
+  display: block;
+  margin: 70px auto 0;
+}
+.contact-form {
+  width: 1000px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 33px calc((60 / 1920) * 100%) 40px calc((60 / 1920) * 100%);
+  margin-top: 90px;
+  background-color: #fff;
+  border: 1px solid #344148;
+  box-shadow: 21px 24px 0 0 rgba($color: #e8d5d5, $alpha: 1);
+
+  h3 {
+    width: 1000px;
+    max-width: 100%;
+    height: 80px;
+    background-color: #e8d5d5;
+    border-radius: 5px;
+    padding: 0 30px;
+    line-height: 80px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2.4px;
+    margin-bottom: 40px;
+  }
+
+  .contact-form-radio-box {
+    display: flex;
+    margin: 30px 0;
+
+    .contact-form-label-required {
+      display: flex;
+      width: 35%;
+
+      .contact-form-label {
+        width: auto;
+        line-height: 30px;
+      }
+
+      .contact-form-required {
+        width: auto;
+        margin-left: auto;
+        margin-right: 30px;
+
+        &-tag {
+          width: 50px;
+          height: 30px;
+          color: #fff;
+          background-color: #ba8686;
+          display: inline-block;
+          text-align: center;
+          font-size: 0.85rem;
+          line-height: 30px;
+        }
+      }
+
+      .contact-form-no-required {
+        width: auto;
+        margin-left: auto;
+        margin-right: 30px;
+      }
+    }
+
+    .contact-form-answer {
+      width: 65%;
+
+      .contact-form-radio {
+        display: flex;
+
+        .contact-form-radio-btn {
+          display: flex;
+          line-height: 30px;
+
+          input {
+            height: 30px;
+            margin-right: 5px;
+          }
+        }
+
+        .margin-20 {
+          margin-right: 20px;
+        }
+      }
+
+      .contact-form-annotation {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .contact-form-text-box {
+    display: flex;
+    margin: 30px 0;
+
+    .contact-form-label-required {
+      display: flex;
+      width: 35%;
+      line-height: 50px;
+
+      .contact-form-label {
+        width: auto;
+        line-height: 50px;
+      }
+
+      .contact-form-required {
+        width: auto;
+        margin-left: auto;
+        margin-right: 30px;
+
+        &-tag {
+          width: 50px;
+          height: 30px;
+          color: #fff;
+          background-color: #ba8686;
+          display: inline-block;
+          text-align: center;
+          font-size: 0.85rem;
+          line-height: 30px;
+        }
+      }
+
+      .contact-form-no-required {
+        width: auto;
+        margin-left: auto;
+        margin-right: 30px;
+      }
+    }
+
+    .contact-form-answer {
+      width: 65%;
+
+      input {
+        height: 50px;
+        padding-left: 10px;
+        border: 1px solid #707070;
+        outline: none;
+        &::placeholder {
+          color: #6a6a6a;
+        }
+      }
+
+      .contact-date {
+        width: 50%;
+      }
+
+      .contact-text {
+        width: 90%;
+      }
+    }
+
+    .contact-form-answer-textarea {
+      width: 65%;
+      line-height: 20px;
+
+      textarea {
+        width: 90%;
+        height: 150px;
+        padding: 10px;
+        border: 1px solid #707070;
+        outline: none;
+        resize: none;
+        line-height: 20px;
+        &::placeholder {
+          color: #6a6a6a;
+        }
+      }
+    }
+  }
+}
+.contact-form-check {
+  text-align: center;
+  width: 1000px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px 50px 65px 50px;
+  margin-top: 90px;
+  background-color: #fff;
+  border: 1px solid #344148;
+  box-shadow: 21px 24px 0 0 rgba($color: #e8d5d5, $alpha: 1);
+}
+.contact-form-check a {
+  color: #525252;
+  text-decoration: underline !important;
+}
+.contact-form-checkbox {
+  margin-top: 40px;
+  input {
+    margin-right: 10px;
+    cursor: default;
+  }
+}
+.contact-form-check button {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  border: 1px solid #9b867b;
+  border-radius: 5px;
+  background-color: #fff;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: "Hiragino Mincho ProN", serif;
+  color: #9b867b;
+  margin-top: 50px;
+  &::after {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #9b867b;
+    border-right: 1px solid #9b867b;
+    transform: rotate(45deg);
+  }
+}
+.contact-form-check .arrow-color-change::after {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.contact-form-massage {
+  width: 700px;
+  margin: 80px auto;
+  font-size: 1.2rem;
+}
+/* --------- responsive --------- */
+@media (min-width: 200px) and (max-width: 768px) {
+  .contact-form-main {
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 48px;
+  }
+  .contact-form-title {
+    width: calc((337 / 375) * 100%);
+    height: 100px;
+  }
+  .contact-form-flow img {
+    width: 90%;
+  }
+  .contact-form {
+    width: 90%;
+    padding: 25px 0;
+    margin-top: 50px;
+    box-shadow: 7px 7px 0 0 rgba($color: #e8d5d5, $alpha: 1);
+
+    h3 {
+      font-size: 4vw;
+      line-height: 20px;
+      width: 90%;
+      height: auto;
+      display: block;
+      padding: 10px 10px;
+      margin: 0 auto 20px;
+    }
+
+    .contact-form-radio-box {
+      width: 90%;
+      margin: 20px auto;
+      display: block;
+
+      .contact-form-label-required {
+        width: 100%;
+
+        .contact-form-label {
+          width: auto;
+        }
+
+        .contact-form-required {
+          width: auto;
+          margin-left: 20px;
+        }
+
+        .contact-form-no-required {
+          width: auto;
+        }
+      }
+
+      .contact-form-answer {
+        width: 100%;
+        margin-top: 10px;
+
+        .contact-form-radio {
+          display: inline;
+
+          .contact-form-radio-btn {
+            font-size: 1rem;
+            display: inline;
+
+            input {
+              height: auto;
+              margin-right: 0;
+            }
+
+            label {
+              width: auto;
+              margin-right: 10px;
+            }
+          }
+
+          .margin-20 {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .contact-form-text-box {
+      width: 90%;
+      margin: 10px auto;
+      display: block;
+
+      .contact-form-label-required {
+        width: 100%;
+
+        .contact-form-label {
+          width: auto;
+        }
+
+        .contact-form-required {
+          width: auto;
+          margin-left: 20px;
+        }
+
+        .contact-form-no-required {
+          width: auto;
+        }
+      }
+
+      .contact-form-answer {
+        width: 100%;
+        margin-top: 0;
+
+        .contact-date {
+          width: 100%;
+        }
+
+        .contact-text {
+          width: 100%;
+        }
+      }
+
+      .contact-form-answer-textarea {
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .contact-form-check {
+    box-shadow: 7px 7px 0 0 rgba($color: #e8d5d5, $alpha: 1);
+    margin-top: 33px;
+    padding: 40px 32px;
+  }
+  .contact-form-check button {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 36px;
+  }
+  .contact-form-checkbox {
+    margin-top: 22px;
+  }
+  .contact-form + .contact-form {
+    margin-top: 42px;
+  }
+  .contact-form-massage {
+    width: 90%;
+    margin: 40px auto;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 320px) {
+  .contact-form-flow ol li {
+    font-size: calc(0.625rem + ((1vw - 3.2px) * 1.4225));
+    min-height: 0vw;
+  }
+  .contact-form h3 {
+    font-size: calc(0.875rem + ((1vw - 3.75px) * 1.5432));
+    min-height: 0vw;
+  }
+  .contact-form .contact-form-radio-btn {
+    font-size: calc(0.75rem + ((1vw - 0.234375rem) * 0.6173));
+    min-height: 0vw;
+  }
+  .contact-form-check button {
+    font-size: calc(0.875rem + ((1vw - 3.2px) * 0.8535));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 768px) {
+  .contact-form-flow ol li {
+    font-size: 20px;
+  }
+  .contact-form h3 {
+    font-size: 24px;
+  }
+  .contact-form .contact-form-radio-btn {
+    font-size: 1rem;
+  }
+  .contact-form-check button {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,133 @@
+/**START DESCRIPTION**/
+
+// DESCRIPTION
+.description {
+  width: 100%;
+  background-color: #faf8f8;
+  padding-bottom: 150px;
+  font-size: 1rem;
+
+  .description-logo {
+    padding-top: 220px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    .description-image {
+      height: 180px;
+    }
+  }
+
+  // DESCRIPTION 7つの個人情報
+  .description-info {
+    color: #525252;
+    background-color: #ffffff;
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+    border: solid 1px #344148;
+    box-shadow: 20px 20px 0px 0 #e8d5d5;
+
+    .description-detail {
+      display: flex;
+      width: 70%;
+      margin: 25px auto;
+
+      .description-title {
+        width: 25%;
+      }
+
+      .description-content {
+        width: 75%;
+
+        .brsp {
+          display: none;
+        }
+      }
+    }
+
+    hr {
+      background-color: #9b867b;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .description {
+    padding-bottom: 83px;
+
+    .description-logo {
+      padding-top: 90px;
+      margin-bottom: 30px;
+      text-align: center;
+
+      .description-image {
+        height: 100px;
+      }
+    }
+
+    .description-info {
+      width: 92%;
+      font-size: 0.875rem;
+      box-shadow: 8px 8px 0px 0 #e8d5d5;
+      padding: 20px 0;
+
+      .description-detail {
+        display: block;
+
+        .description-title {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        .description-content {
+          width: 90%;
+          margin-left: auto;
+
+          .brsp {
+            display: block;
+          }
+        }
+      }
+
+      hr {
+        background-color: #9b867b;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/**END DESCRIPTION**/
+
+/**START FOOTER**/
+.footer {
+  padding: 70px 0px;
+  background-color: #ffffff !important;
+}
+
+.footer .footer-alt p {
+  color: #a7958b !important;
+  font-size: 12px;
+}
+
+.footer .footer-alt ul li a {
+  border-radius: 50%;
+  transition: all 0.5s;
+  background-color: rgba(241, 241, 241, 0.08);
+  width: 42px;
+  height: 42px;
+  display: block;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  /*===========================
+        HOME
+    =============================*/
+}
+/**END FOOTER**/

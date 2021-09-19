@@ -1,0 +1,214 @@
+.faq-container {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 1200px;
+}
+.faq-main {
+  margin-top: 111px;
+  padding-top: 76px;
+  padding-bottom: 274.5px;
+  background-color: #f8f5f5;
+}
+.faq-title {
+  margin: 0 auto;
+  width: auto;
+  height: 180px;
+  text-align: center;
+  img {
+    height: 180px;
+  }
+}
+.faq-menu {
+  margin: 0 auto;
+  margin-top: 115px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  max-width: 100%;
+  width: 1330px;
+  border-bottom: 2px dotted #344148;
+}
+.faq-menu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 126.5px;
+}
+.faq-list-name {
+  width: calc((300 / 1330) * 100%);
+  height: 70px;
+  border: 1px solid #707070;
+  background-color: #fff;
+  box-shadow: 10px 10px 0 0 rgba($color: #e8d5d5, $alpha: 1);
+  list-style: none;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Hiragino Mincho ProN", serif;
+  line-height: 70px;
+  a {
+    display: block;
+    color: #525252;
+    padding: 0 5px;
+  }
+}
+.faq-list-item {
+  margin-top: 101.5px;
+  .faq-list-name {
+    width: 300px;
+  }
+}
+.faq-question {
+  position: relative;
+  margin-top: 68px;
+  padding-left: 70px;
+  height: auto;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-family: "Hiragino Mincho ProN", serif;
+  line-height: 40px;
+  p {
+    padding-right: 50px;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 48px;
+    color: #9b867b;
+    content: "Q.";
+    font-size: 2.5rem;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  }
+}
+.faq-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.faq-toggle {
+  width: 100%;
+  height: 50px;
+}
+.faq-toggle span {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  width: 30px;
+  height: 7px;
+  background-color: #9b867b;
+  &:nth-of-type(2) {
+    margin-top: -7px;
+    opacity: 1;
+    transition: all 0.3s;
+    transform: rotate(90deg);
+  }
+}
+.faq-toggle-open span:nth-of-type(2) {
+  opacity: 0;
+}
+.faq-answer {
+  position: relative;
+  display: none;
+  margin-top: 56px;
+  padding-bottom: 44.5px;
+  padding-left: 70px;
+  letter-spacing: 1.6px;
+  &::before {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    display: inline-block;
+    width: 48px;
+    color: #ba8686;
+    content: "A.";
+    font-size: 2.5rem;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  }
+}
+.faq-wrap {
+  padding-bottom: 10px;
+  border-bottom: 2px dotted #344148;
+}
+
+/* --------- responsive --------- */
+@media (min-width: 200px) and (max-width: 768px) {
+  .faq-main {
+    margin-top: 50px;
+    padding-top: 35px;
+    padding-bottom: 85.5px;
+  }
+  .faq-container {
+    width: calc((363 / 375) * 100%);
+  }
+  .faq-title {
+    width: calc((173 / 375) * 100%);
+    height: 100px;
+    img {
+      width: auto;
+      height: 100px;
+      object-fit: contain;
+    }
+  }
+  .faq-menu {
+    margin-top: 47px;
+    padding-bottom: 0;
+  }
+  .faq-menu ul {
+    flex-wrap: wrap;
+    margin-bottom: 41.5px;
+  }
+  .faq-list-name {
+    box-shadow: 4px 4px 0 0 rgba($color: #e8d5d5, $alpha: 1);
+  }
+  .faq-list-name {
+    width: calc((175 / 375) * 100%);
+    height: 40px;
+    font-size: 2vw;
+    line-height: 40px;
+  }
+  .faq-menu .faq-list-name {
+    justify-content: space-around;
+    &:nth-of-type(n + 3) {
+      margin-top: 10px;
+    }
+  }
+  .faq-list-item {
+    margin-top: 47.5px;
+  }
+  .faq-list-item .faq-list-name {
+    width: calc((175 / 337.5) * 100%);
+    margin: 0 auto;
+  }
+  .faq-question {
+    line-height: 20px;
+    margin-top: 45px;
+    padding-left: 50px;
+    p {
+      font-size: 3vw;
+    }
+    &::before {
+      font-size: 2rem;
+    }
+  }
+  .faq-answer {
+    font-size: 2.5vw;
+    line-height: 20px;
+    margin-top: 25px;
+    padding-bottom: 35px;
+    padding-left: 50px;
+    &::before {
+      top: 5px;
+      font-size: 2rem;
+    }
+  }
+  .faq-toggle {
+    top: -7px;
+  }
+  .faq-toggle span {
+    width: 20px;
+    height: 4px;
+    &:nth-of-type(2) {
+      margin-top: -4px;
+    }
+  }
+}

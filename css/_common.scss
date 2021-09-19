@@ -1,0 +1,181 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "NotoSansJP-Light", sans-serif;
+  color: #525252;
+  letter-spacing: 2px;
+}
+
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #525252;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn {
+  padding: 0.5rem;
+  letter-spacing: 0.6px;
+  box-shadow: none !important;
+  text-transform: uppercase;
+  outline: none !important;
+  color: currentColor;
+}
+
+.btn-custom {
+  color: #fff;
+  border: 1px solid #b50100;
+  background-color: #b50100;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+  color: #f3f3f3;
+  background-color: #d8576f;
+  border-color: #d8576f;
+}
+
+.brsp {
+  display: none;
+}
+
+.brpc {
+  display: block;
+}
+
+.brminipc {
+  display: none;
+}
+
+// 画像サイズは元サイズの75%に設定
+.banner-img {
+  max-width: 600px;
+}
+
+.section-title-img {
+  display: block;
+  margin: auto;
+  height: 190px;
+}
+
+.fade-in-img {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s;
+}
+
+.common-consultation-form-fix-btn {
+  display: none;
+}
+
+.phone-business-hour-fix-btn {
+  display: none;
+}
+
+iframe.wp-embedded-content {
+  width:100%;
+  max-width:500px;
+}
+
+figure {
+  margin: 1em 0px;
+}
+
+@media (min-width: 769px) and (max-width: 1400px) {
+  .brminipc {
+    display: block;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .brsp {
+    display: block;
+  }
+  .brpc {
+    display: none;
+  }
+
+  .banner-img {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+  }
+
+  .section-title-img {
+    display: block;
+    margin: auto;
+    height: 100px;
+  }
+
+  .fade-in-img {
+    transform: translateY(30px);
+  }
+
+  .footer-fix-btn {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    height: 40px;
+    margin: auto;
+    font-family: "Hiragino Mincho ProN", serif;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .common-consultation-form-fix-btn {
+    display: block;
+    width: 45%;
+    max-width: 180px;
+    border: 1px solid #9b867b;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    line-height: 40px;
+    background-color: #fff;
+    color: #9b867b;
+    margin-left: 10px;
+    &:hover {
+      background-color: #9b867b;
+      color: #fff;
+    }
+  }
+  .phone-business-hour-fix-btn {
+    display: block;
+    width: 45%;
+    max-width: 180px;
+    border: 1px solid #9b867b;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #9b867b;
+    &:hover {
+      background-color: #9b867b;
+      color: #fff;
+    }
+    .phone {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .business-hour {
+      font-size: 0.7rem;
+    }
+  }
+}
