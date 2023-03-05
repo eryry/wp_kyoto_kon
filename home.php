@@ -9,7 +9,7 @@
         <span class="ml">「かしこい」結婚式</span>
       </p>
       <a href="fair-campaign" class="banner-link"
-      ><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner/banner_202104campaign.png"
+      ><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner/banner_gift.jpg"
             class="banner-img"
         /></a>
     </div>
@@ -871,12 +871,12 @@
     </div>
     <div class="show-room-main">
       <a href="consultation">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top/show_room.png" alt="" class="fade-in-img"/>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top/show_room.png?20220313" alt="" class="fade-in-img"/>
       </a>
       <a href="consultation">
         <div class="show-room-right-wrapper">
-          <p class="hall-name">The Quatre-C VICEO</p>
-          <p class="hall-address">京都市左京区岡崎成勝寺町5-2</p>
+          <p class="hall-name">岡崎庵</p>
+          <p class="hall-address">京都市左京区岡崎円勝寺町91-65</p>
         </div>
       </a>
     </div>
@@ -890,11 +890,11 @@
     </div>
 
     <div class="fair-banner">
-      <a
+      <!-- <a
           href="fair-campaign"
           class="banner-link fair-banner-link fade-in-img"
       ><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner/banner_202104campaign.png" class="banner-img"
-        /></a>
+        /></a> -->
       <a
           href="fair-campaign"
           class="banner-link fair-banner-link fade-in-img"
